@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from 'react'
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,21 +9,11 @@ import Gallery from "./Pages/Gallery";
 import ContactUs from "./Pages/ContactUs";
 import BookOnline from "./Pages/BookOnline";
 import "./index.css";
+import Scroll from './components/Scroll';
 
-import { AiOutlineArrowUp } from "react-icons/ai";
 
 function App() {
-  const [visible, setVisible] = useState(false);
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
-  window.addEventListener("scroll", toggleVisible);
+  
 
   return (
     <BrowserRouter>
@@ -34,25 +25,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/bookonline" element={<BookOnline />} />
       </Routes>
-      <button
-        onClick={() => {
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        }}
-        style={{
-          borderRadius: "50%",
-          padding: "6px 10px",
-          outline: "none",
-          border: "none",
-          fontSize: "20px",
-          bottom: "40px",
-          right: "40px",
-          backgroundColor: "#eb202b",
-          color: "#fff",
-          textAlign: "center",
-          display: visible ? "inline" : "none",
-        }}>
-        <AiOutlineArrowUp />
-      </button>
+     <Scroll/>
       <Footer />
     </BrowserRouter>
   );

@@ -1,0 +1,36 @@
+.searchform{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.searchform .field{
+    /* display: inline-block; */
+    padding: 6px 12px;
+    width: 327px;
+    height: 45px;
+    line-height: 32px;
+    background: #fff;
+    border: 1px solid #dedede;
+}
+.date-field{
+    border: none;
+}
+.btn{
+    border: 1px solid #deb666;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 327px;
+    padding: 8px 15px;
+    background: #deb666;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    /* display: inline-block; */
+    line-height: 1.82857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}

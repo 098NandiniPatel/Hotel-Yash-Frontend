@@ -1,102 +1,69 @@
-// import React, { useState } from 'react';
-// import { DateRangePicker } from 'react-date-range';
-// import 'react-date-range/dist/styles.css'; // Import the styles
-// import 'react-date-range/dist/theme/default.css'; // Import the default theme
+import React, { useState } from 'react'
+import { DatePicker } from 'antd';
+// import moment from 'moment';
+import { Menu, Dropdown} from 'antd';
+import './dataform.css'
 
-// const DateForm = () => {
-//   const [selectedRange, setSelectedRange] = useState([
-//     {
-//       startDate: new Date(),
-//       endDate: null,
-//       key: 'selection',
-//     },
-//   ]);
 
-//   const handleRangeChange = (ranges) => {
-//     setSelectedRange([ranges.selection]);
-//   };
-
-//   return (
-//     <form>
-//       <div>
-//         <label htmlFor="dateRangePicker">Select a Date Range:</label>
-//         <DateRangePicker
-//           id="dateRangePicker"
-//           ranges={selectedRange}
-//           onChange={handleRangeChange}
-//         />
-//       </div>
-//       <button type="submit">Submit</button>
-//     </form>
-//   );
-// };
-
-// export default DateForm;
-
-// import React from 'react'
-// import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-// import { LocalizationProvider } from '@mui/x-date-pickers-pro';
-// import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
-// import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
-// const DateForm = () => {
-//     return (
-//         <LocalizationProvider dateAdapter={AdapterDayjs}>
-//           <DemoContainer components={['DateRangePicker']}>
-//             <DateRangePicker localeText={{ start: 'Check-in', end: 'Check-out' }} />
-//           </DemoContainer>
-//         </LocalizationProvider>
-//       );
-// }
-
-// export default DateForm
-
-import React, { useState } from 'react';
-import { DatePicker, MobileDatePicker } from '@mui/lab';
-import { TextField, Button } from '@mui/material';
+const { RangePicker } = DatePicker;
 
 const DateForm = () => {
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
+  function onChange(date, dateString) {
+    console.log(date, dateString);
+  }
+  const [adult, setAdult] = useState(1)
+  const [children, setChildren] = useState(0)
 
-  const handleStartDateChange = (date) => {
-    setStartDate(date);
-  };
+  const menu = (
+    <Menu style={{ padding: '15px', color: '#858a99' }}>
+      <div style={{ display: 'flex', paddingBottom: '20px', justifyContent: 'space-between' }}>
+        <div>
+          <h4>Adults</h4>
+          <p>Ages 18+</p>
+        </div>
+        <div>
+          <button onClick={e => setAdult(adult - 1)}>-</button>
+          <span>{adult}</span>
+          <button onClick={e => setAdult(adult + 1)}>+</button>
+        </div>
 
-  const handleEndDateChange = (date) => {
-    setEndDate(date);
-  };
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div>
+          <h4>Children</h4>
+          <p>Ages 4 to 18</p>
+        </div>
+        <div>
+          <button onClick={e => setChildren(children - 1)}>-</button>
+          <span>{children}</span>
+          <button onClick={e => setChildren(children + 1)}>+</button>
+        </div>
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Submitted:', startDate, endDate);
-    // Add your form submission logic here
-  };
+      </div>
+    </Menu>
+  );
+  const total = adult + children
+
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="startDatePicker">Start Date:</label>
-        <DatePicker
-          id="startDatePicker"
-          value={startDate}
-          onChange={handleStartDateChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
+    <div className='searchform' >
+      <div className='field'>
+        <RangePicker onChange={onChange} className='date-field'/>
+      </div>
+      <div className='field'>
+        <Dropdown overlay={menu} trigger={['click']}>
+          <div>
+            Guests {total}
+          </div>
+        </Dropdown>
       </div>
       <div>
-        <label htmlFor="endDatePicker">End Date:</label>
-        <DatePicker
-          id="endDatePicker"
-          value={endDate}
-          onChange={handleEndDateChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
+        <button className='btn'>Check Availability</button>
       </div>
-      <Button type="submit" variant="contained" color="primary">
-        Submit
-      </Button>
-    </form>
-  );
-};
 
-export default DateForm;
+    </div>
+  )
+}
+
+export default DateForm
+

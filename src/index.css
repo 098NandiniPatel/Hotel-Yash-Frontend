@@ -6,6 +6,7 @@
   --black: #0a0a0a;
   --yellow: #deb666;
   --text1: #858a99;
+  --heading:#606060;
 }
 * {
   margin: 0;
@@ -13,7 +14,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text1);
   background: var(--bg1);
   height: 100vh;
@@ -23,4 +24,32 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+section{
+  padding: 3rem 10rem;
+}
+h1{
+  color: var(--heading);
+  font-size: 32px;
+}
+.bg2{
+  background: var(--bg2);
+}
+.first-section{
+  padding-top: 7rem;
+}
+
+
+@media (max-width:768px) {
+  section{
+    padding: 2rem;
+  }
+}
+@media (max-width:426px) {
+  section{
+    padding: 1rem;
+  }
+  h1{
+    font-size: 22px;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './slider.css';
 
-const Slider = ({ slides }) => {
+const HeroSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
   useEffect(() => {
@@ -20,7 +20,7 @@ useEffect(()=>setAnimate(true),[currentIndex])
   };
 
   return (
-    <div className="slider">
+    <div className="slider first-section">
       <div className="slider-container">
         {slides.map((slide, index) => (
           <div
@@ -48,4 +48,4 @@ useEffect(()=>setAnimate(true),[currentIndex])
   );
 };
 
-export default Slider;
+export default HeroSlider;

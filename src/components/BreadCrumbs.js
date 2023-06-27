@@ -3,21 +3,17 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 
-const BreadCrumbs = () => {
+const BreadCrumbs = (props) => {
   return (
+    <section className='bg2 first-section' style={{color:"#606060"}}>
+    <h1 style={{marginBottom:'4px'}}>{props.name}</h1>
     <Breadcrumbs aria-label="breadcrumb">
-        <Link underline="hover" color="inherit" href="/">
+        <Link href="/" style={{textDecoration:'none',color:"#606060"}}>
           Home
         </Link>
-        <Link
-          underline="hover"
-          color="inherit"
-          href="/material-ui/getting-started/installation/"
-        >
-          Core
-        </Link>
-        <Typography color="text.primary">Breadcrumbs</Typography>
+        <Typography>{props.name}</Typography>
       </Breadcrumbs>
+    </section>
   )
 }
 

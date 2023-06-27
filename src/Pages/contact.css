@@ -1,0 +1,29 @@
+.contactForm{
+    width: 100%;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.col{
+    width: 100%;
+}
+.input-field{
+width: 70%;
+}
+.input-field-long{
+    width: 170%;
+}
+.input-field-short{
+    width: 10%;
+    justify-items: start;
+}
+@media (max-width:768px){
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input-field, .input-field-long{
+        width: 100%;
+    }
+}
