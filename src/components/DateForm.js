@@ -58,7 +58,7 @@ const DateForm = () => {
         </Dropdown>
       </div>
       <div>
-        <button className='btn'>Check Availability</button>
+        <button className='btn check-btn'>Check Availability</button>
       </div>
 
     </div>

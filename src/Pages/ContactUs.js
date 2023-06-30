@@ -17,7 +17,7 @@ const ContactUs = () => {
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
-    toast('Form sent!', {
+    toast('Submitted Successfully!', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,
@@ -74,7 +74,7 @@ const ContactUs = () => {
                 className='input-field'
                 placeholder='Your Name'
               ></input>
-              {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
+              {errors.name && <div className='errorMessage'>{errors.name.message}</div>}
             </div>
             <div className='col'>
               <input
@@ -88,7 +88,7 @@ const ContactUs = () => {
                 className='input-field'
                 placeholder='Your Phone'
               ></input>
-              {errors.phone && <span className='errorMessage'>Please enter a valid mobile number</span>}
+              {errors.phone && <div className='errorMessage'>Please enter a valid mobile number</div>}
             </div>
           </div>
           {/* Row 2 of form */}
@@ -106,7 +106,7 @@ const ContactUs = () => {
                 placeholder='Your Email'
               ></input>
               {errors.email && (
-                <span className='errorMessage'>Please enter a valid email address</span>
+                <div className='errorMessage'>Please enter a valid email address</div>
               )}
             </div>
             <div className='col'>
@@ -127,23 +127,23 @@ const ContactUs = () => {
                 placeholder='Subject'
               ></input>
               {errors.subject && (
-                <span className='errorMessage'>{errors.subject.message}</span>
+                <div className='errorMessage'>{errors.subject.message}</div>
               )}
             </div>
           </div>
           {/* Row 3 of form */}
           <div className='row'>
-            <div className='col'>
+            <div className='text-col'>
               <textarea
                 rows={3}
                 name='message'
                 {...register('message', {
                   required: true
                 })}
-                className='input-field-long'
+                className='input-field'
                 placeholder='Your Message'
               ></textarea>
-              {errors.message && <span className='errorMessage'>Please enter a message</span>}
+              {errors.message && <div className='errorMessage'>Please enter a message</div>}
             </div>
           </div>
           {/* Row 4 of form */}
@@ -156,8 +156,8 @@ const ContactUs = () => {
                   required: true
                 })}
                 className='input-field-short'
-              ></input>Accept Terms and Conditions
-              {errors.check && <span className='errorMessage'>Please check the box</span>}
+              ></input> Accept Terms & Conditions
+              {errors.check && <div className='errorMessage'>Please check the box</div>}
             </div>
           </div>
           <button className='btn' disabled={disabled} type='submit'>

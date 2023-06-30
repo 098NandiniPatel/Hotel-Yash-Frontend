@@ -52,6 +52,9 @@
 
 
 @media(max-width:1024px){
+  .Header{
+    padding: 0 2rem;
+  }
     .navbar-btn{
         margin-right: 0;
     }

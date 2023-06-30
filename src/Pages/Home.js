@@ -61,8 +61,8 @@ const Home = () => {
           <div style={{ padding: '30px ', textAlign: 'center' }}>
             <h2 style={{ fontWeight: '200', paddingBottom: '5px', color: '#deb666' }} >Want to check our photos ?</h2>
             <a href="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos 
-            {/* <span><FaArrowRightLong /></span> */}
-            <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span>
+            <span><FaArrowRightLong /></span>
+            {/* <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span> */}
             </h1></a>
           </div>
         </div>

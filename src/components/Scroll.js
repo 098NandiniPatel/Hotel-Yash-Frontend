@@ -21,7 +21,6 @@ const Scroll = () => {
     }}
     style={{
       display: {visible} ? "inline" : "none",
-
       position:'fixed',
       borderRadius: "3px",
       padding: "6px 10px",
