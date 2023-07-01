@@ -1,50 +1,53 @@
-.contactForm{
-    width: 70%;
+.contactForm {
+  width: 70%;
 }
-.row{
-    display: flex;
+.row {
+  display: flex;
 }
-.col{
-    width: 50%;
-    margin-bottom: 20px;
+.col {
+  width: 50%;
+  margin-bottom: 20px;
 }
-.text-col{
-    width: 100%;
-    margin-bottom: 20px;
+.text-col {
+  width: 100%;
+  margin-bottom: 20px;
 }
-.input-field{
-width:90%;
-height: 52px;
-    border-radius: 1px;
-    border: 1px solid #dedede;
-    background-color: #fcfcfc;
-    outline: none;
+.input-field {
+  width: 90%;
+  height: 52px;
+  border-radius: 1px;
+  border: 1px solid #dedede;
+  background-color: #fcfcfc;
+  outline: none;
+  padding-left: 30px;
+}
+.input-field-long {
+  width: 95%;
+  height: 100px;
+  padding-top: 20px;
 }
 ::placeholder {
-    font-size: 16px;
-    font-weight: 100;
-    color:#b3b3b3;
-    padding-left: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #b3b3b3;
+  /* padding-left: 20px; */
 }
-.errorMessage{
-    font-size: 12px;
-    font-weight: 200;
-    color:var(--black);
+.errorMessage {
+  font-size: 12px;
+  font-weight: 200;
+  color: var(--black);
 }
-.submit-feedback{
-    color: rgb(25, 193, 25);
+.submit-feedback {
+  color: rgb(25, 193, 25);
 }
-@media (max-width:768px){
-    .contactForm{
-        width: 100%;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .col,.text-col{
-        width: 100%;
-    }
-    .input-field{
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  .contactForm,
+  .col,
+  .text-col,
+  .input-field {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
 }

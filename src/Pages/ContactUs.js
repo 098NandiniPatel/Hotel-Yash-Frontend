@@ -140,7 +140,7 @@ const ContactUs = () => {
                 {...register('message', {
                   required: true
                 })}
-                className='input-field'
+                className='input-field-long input-field'
                 placeholder='Your Message'
               ></textarea>
               {errors.message && <div className='errorMessage'>Please enter a message</div>}
@@ -155,7 +155,7 @@ const ContactUs = () => {
                 {...register('check', {
                   required: true
                 })}
-                className='input-field-short'
+                className=''
               ></input> Accept Terms & Conditions
               {errors.check && <div className='errorMessage'>Please check the box</div>}
             </div>
