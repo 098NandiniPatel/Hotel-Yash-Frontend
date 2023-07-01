@@ -4,16 +4,16 @@ import { DatePicker } from 'antd';
 import { Menu, Dropdown} from 'antd';
 import './dataform.css'
 
-
 const { RangePicker } = DatePicker;
 
 const DateForm = () => {
+
   function onChange(date, dateString) {
     console.log(date, dateString);
   }
   const [adult, setAdult] = useState(1)
   const [children, setChildren] = useState(0)
-
+ 
   const menu = (
     <Menu style={{ padding: '15px', color: '#858a99' }}>
       <div style={{ display: 'flex', paddingBottom: '20px', justifyContent: 'space-between' }}>
@@ -21,7 +21,7 @@ const DateForm = () => {
           <h4>Adults</h4>
           <p>Ages 18+</p>
         </div>
-        <div>
+        <div className='inc-dec-btn'>
           <button onClick={e => setAdult(adult - 1)}>-</button>
           <span>{adult}</span>
           <button onClick={e => setAdult(adult + 1)}>+</button>
@@ -33,7 +33,7 @@ const DateForm = () => {
           <h4>Children</h4>
           <p>Ages 4 to 18</p>
         </div>
-        <div>
+        <div className='inc-dec-btn'>
           <button onClick={e => setChildren(children - 1)}>-</button>
           <span>{children}</span>
           <button onClick={e => setChildren(children + 1)}>+</button>
@@ -46,6 +46,7 @@ const DateForm = () => {
 
 
   return (
+    <form id='checkavail-form' >
     <div className='searchform' >
       <div className='field'>
         <RangePicker onChange={onChange} className='date-field'/>
@@ -58,10 +59,11 @@ const DateForm = () => {
         </Dropdown>
       </div>
       <div>
-        <button className='btn check-btn'>Check Availability</button>
+        <button className='btn check-btn' type='submit'>Check Availability</button>
       </div>
 
     </div>
+    </form>
   )
 }
 

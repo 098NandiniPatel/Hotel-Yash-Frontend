@@ -16,7 +16,16 @@
 .date-field{
     border: none;
 }
-
+.inc-dec-btn{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inc-dec-btn button{
+    padding: 10px;
+    height: 40px;
+}
 .check-btn{
     width: 100%;
 }

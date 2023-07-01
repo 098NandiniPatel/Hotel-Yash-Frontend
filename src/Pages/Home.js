@@ -9,6 +9,7 @@ import Services from '../components/Services';
 import { FaArrowRightLong } from "react-icons/fa6"
 import Testimonials from '../components/Testimonials';
 import GallerySection from '../components/GallerySection';
+import Rooms from '../components/Rooms';
 const Home = () => {
   const slides = [
     {
@@ -71,7 +72,7 @@ const Home = () => {
       {/* css part in services.css */}
       <h1 className='service-heading'>Our FAVORITE ROOMS</h1>
       <p className='service-subhead'>Check out now our best rooms</p>
-        <Testimonials/>
+        <Rooms/>
       </section>
       <section>
       {/* css part in services.css */}

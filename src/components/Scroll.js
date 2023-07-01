@@ -16,7 +16,6 @@ const Scroll = () => {
   return (
     <button
     onClick={() => {
-        alert("click");
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }}
     style={{
@@ -32,7 +31,7 @@ const Scroll = () => {
       backgroundColor: "#deb666",
       color: "#fff",
       textAlign: "center",
-    //   display:'inline'
+
 
     }}>
     <AiOutlineArrowUp />
