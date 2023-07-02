@@ -4,6 +4,7 @@ import "./Header.css";
 import { NavLink } from 'react-router-dom'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
+import logo from '../img/logo.png'
 // import Hamburger from "./Hamburger";
 
 export default function Header() {
@@ -15,7 +16,7 @@ useEffect(()=>{hamburger? setStyle("navbar-list-update"):setStyle("navbar-list")
   return (
     <>
     <header className="Header">
-      <img src="https://hotelemojiinn.com/wp-content/uploads/2022/08/Copy-of-Untitled-Design.png" className="Logo" alt="logo" />
+      <img src={logo} className="Logo" alt="logo" />
       <nav className="Nav">
         <div className="menuIcon">
           {/* <ul className="navbar-list "> */}

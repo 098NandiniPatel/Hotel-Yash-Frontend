@@ -16,24 +16,27 @@ import ScrollToTop from 'react-scroll-to-top';
 
 
 function App() {
-  
 
   return (
     <BrowserRouter>
       <Header />
+      <div style={{overflow:'hidden'}}>
       <Routes>
-        <Route path="/" element={<Home />} />
+      
+        <Route path="/" element={<Home />}  />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/bookonline" element={<BookOnline />} />
         <Route path="/happy-room" element={<HappyRoom />} />
-         <Route path="/super-happy-room" element={<SuperHappyRoom/>} />
+        <Route path="/super-happy-room" element={<SuperHappyRoom/>} />
       </Routes>
+      </div>
+
      {/* <Scroll/> */}
      
       <Footer />
-      <ScrollToTop smooth top={300}/>
+      <ScrollToTop smooth top={300} color='#deb666'/>
     </BrowserRouter>
   );
 }

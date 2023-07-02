@@ -4,16 +4,16 @@
     justify-content: space-between;
     padding: 0 10rem;
     position: fixed;
-    top: 0; /* Stick it to the top */
-    height: 70px;
-    width: 100vw;
+    top: 0; 
+    height: 70px; 
+    width: 100%;
     z-index: 100;
     background-color: var(--black);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
   .Logo {
-    height: 60px;
+    height: 200px;
   }
   
   .navbar-list{
@@ -64,7 +64,8 @@
         padding: 0 2rem;
     }
     .Logo {
-        height: 40px;
+        height: 180px;
+        margin-left: -50px;
       }
     .navbar-list-update{
         display: inline-block;
@@ -88,7 +89,7 @@
     }
     .burger{
         display: inline-block;
-        color: #fff;
+        color: var(--yellow);
         font-size: 25px;
         background: none;
         border: none;
