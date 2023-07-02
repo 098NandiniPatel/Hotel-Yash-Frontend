@@ -11,6 +11,7 @@ import Testimonials from '../components/Testimonials';
 import GallerySection from '../components/GallerySection';
 import Rooms from '../components/HomeRooms';
 import { NavLink } from 'react-router-dom'
+
 const Home = () => {
   const slides = [
     {

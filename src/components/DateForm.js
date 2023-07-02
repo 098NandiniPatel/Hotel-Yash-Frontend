@@ -20,7 +20,6 @@ const DateForm = () => {
       adultNo:adult,
       childNo:children
     })
-
     //after submit redirect logic goes here
 
 

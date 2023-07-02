@@ -1,42 +1,26 @@
-import { AiOutlineArrowUp } from "react-icons/ai";
-import React, { useState } from "react";
+// import { AiOutlineArrowUp } from "react-icons/ai";
+// import React, { useEffect, useState } from "react";
+// import './scroll.css'
+// const Scroll = () => {
+//   const [visible, setVisible] = useState(false);
+//   useEffect(() => {
+//     window.addEventListener("scroll", () => {
+//       if (window.scrollY > 400) {
+//         setVisible(true);
+//       } else {
+//         setVisible(false);
+//       }
+//     });
+//   }, []);
+//   const goToTop = () =>window.scrollTo({ top: 0, behavior: "smooth" });
 
-const Scroll = () => {
-    const [visible, setVisible] = useState(false);
+//   return (
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
-  window.addEventListener("scroll", toggleVisible);
-  return (
-    <button
-    onClick={() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }}
-    style={{
-      display: {visible} ? "inline" : "none",
-      position:'fixed',
-      borderRadius: "3px",
-      padding: "6px 10px",
-      outline: "none",
-      border: "none",
-      fontSize: "20px",
-      bottom: "40px",
-      right: "40px",
-      backgroundColor: "#deb666",
-      color: "#fff",
-      textAlign: "center",
+//     <div className="top-to-btn">
+//       {visible &&
+//         (<AiOutlineArrowUp className="icon-position icon-style" onClick={goToTop} />)}
+//     </div>
+//   )
+// }
 
-
-    }}>
-    <AiOutlineArrowUp />
-  </button>
-  )
-}
-
-export default Scroll
+// export default Scroll;

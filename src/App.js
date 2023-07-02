@@ -12,6 +12,7 @@ import "./index.css";
 import Scroll from './components/Scroll';
 import HappyRoom from './Pages/HappyRoom';
 import SuperHappyRoom from './Pages/SuperHappyRoom';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 function App() {
@@ -29,8 +30,10 @@ function App() {
         <Route path="/happy-room" element={<HappyRoom />} />
          <Route path="/super-happy-room" element={<SuperHappyRoom/>} />
       </Routes>
-     <Scroll/>
+     {/* <Scroll/> */}
+     
       <Footer />
+      <ScrollToTop smooth top={300}/>
     </BrowserRouter>
   );
 }
