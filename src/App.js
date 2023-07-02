@@ -10,6 +10,8 @@ import ContactUs from "./Pages/ContactUs";
 import BookOnline from "./Pages/BookOnline";
 import "./index.css";
 import Scroll from './components/Scroll';
+import HappyRoom from './Pages/HappyRoom';
+import SuperHappyRoom from './Pages/SuperHappyRoom';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/bookonline" element={<BookOnline />} />
+        <Route path="/happy-room" element={<HappyRoom />} />
+         <Route path="/super-happy-room" element={<SuperHappyRoom/>} />
       </Routes>
      <Scroll/>
       <Footer />

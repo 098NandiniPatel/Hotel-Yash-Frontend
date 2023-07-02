@@ -4,13 +4,14 @@ align-items: center;
 gap: 30px;
 }
 .room-card{  
-    color: var(--heading);
+
     width: 50%; 
     text-align: center;
     position: relative;
     border: 1px solid #eaeaea;
 }
 .room-card p{
+    color: var(--heading);
     position: absolute;
     top: 15px;
     left: 10px;
@@ -19,6 +20,7 @@ gap: 30px;
     border-radius: 3px;
 }
 .room-card h3{
+    color: var(--heading);
     font-weight: 500;
     margin:  10px 0;
 }

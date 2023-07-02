@@ -1,7 +1,7 @@
 export const roomList=[
     {
         key:'0',
-        link:'/home',
+        link:'/happy-room',
         name:'Happy Room (No-View)',
         img:'https://hotelemojiinn.com/wp-content/uploads/2018/07/WhatsApp-Image-2022-08-23-at-11.07.21-AM-1-720x470.jpeg',
         price:'2,500.00',
@@ -9,7 +9,7 @@ export const roomList=[
     },
     {
         key:'1',
-        link:'/gallery',
+        link:'/super-happy-room',
         name:'Super Happy Room (Lake View)',
         img:'https://hotelemojiinn.com/wp-content/uploads/2018/07/WhatsApp-Image-2022-08-23-at-11.07.18-AM-2-720x470.jpeg',
         price:'3,000.00',

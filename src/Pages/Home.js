@@ -9,7 +9,8 @@ import Services from '../components/Services';
 import { FaArrowRightLong } from "react-icons/fa6"
 import Testimonials from '../components/Testimonials';
 import GallerySection from '../components/GallerySection';
-import Rooms from '../components/Rooms';
+import Rooms from '../components/HomeRooms';
+import { NavLink } from 'react-router-dom'
 const Home = () => {
   const slides = [
     {
@@ -61,10 +62,10 @@ const Home = () => {
         <div style={{ border: '2px solid #858a99' }}>
           <div style={{ padding: '30px ', textAlign: 'center' }}>
             <h2 style={{ fontWeight: '200', paddingBottom: '5px', color: '#deb666' }} >Want to check our photos ?</h2>
-            <a href="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos 
+            <NavLink to="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos 
             <span><FaArrowRightLong /></span>
             {/* <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span> */}
-            </h1></a>
+            </h1></NavLink>
           </div>
         </div>
       </section>
