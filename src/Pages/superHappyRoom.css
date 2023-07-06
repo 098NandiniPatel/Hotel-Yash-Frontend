@@ -1,0 +1,43 @@
+
+.room-left{
+    width: 50%;
+    padding: 10px 10px 0 0;
+}
+
+.room-right{
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    width: 50%;
+}
+
+.similar-room-card{
+    position: relative;
+    text-decoration: none;
+    /* color: #fff; */
+}
+.similar-room-card img:hover{
+box-shadow: 5px 5px 5px 5px #606060;
+}
+.similar-room-card h3 ,.similar-room-card p{
+    color:#fff;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+}
+.similar-room-card p{
+    bottom: 20px;
+}
+@media (max-width:768px){
+    .room-row{
+        flex-direction: column;
+    }
+    .room-left{
+        width: 100%;
+    }
+    
+    .room-right{
+        width:100%;
+        margin:5px;
+    }
+}

@@ -1,7 +1,7 @@
 .footer {
     background-color:var(--black);
     color:var(--yellow);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 18px;
   }
@@ -17,8 +17,8 @@
 
   .footer .social-icons a {
     display: inline-block;
-    margin-right: 10px;
-    padding-top: 7px;
+    margin: 15px 10px;
+    /* padding-top: 10px; */
   }
 
   .footer .social-icons a img {
@@ -26,8 +26,8 @@
     height: 20px;
   }
 
-  .footer .address {
-    margin-top: 20px;
+  .footer .address p, .socialmedia p {
+    margin-top: 10px;
   }
 
   .links {
@@ -39,4 +39,7 @@
   }
   .socialmedia {
     padding-bottom: 1%;
+  }
+  .footer img{
+   scale: 1.5;
   }

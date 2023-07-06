@@ -19,22 +19,21 @@ useEffect(()=>{hamburger? setStyle("navbar-list-update"):setStyle("navbar-list")
       <img src={logo} className="Logo" alt="logo" />
       <nav className="Nav">
         <div className="menuIcon">
-          {/* <ul className="navbar-list "> */}
           <ul className={style}>
             <li>
-              <NavLink className='navbar-link' to='/'>Home</NavLink>
+              <NavLink className='navbar-link' activeClassName="active" to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink className='navbar-link' to='/gallery'>Gallery</NavLink>
+              <NavLink className='navbar-link ' to='/gallery'>Gallery</NavLink>
             </li>
             <li>
               <NavLink className='navbar-link' to='/aboutus'>About Us</NavLink>
             </li>
             <li>
-              <NavLink className='navbar-link' to='/contactus'>Contact Us</NavLink>
+              <NavLink className='navbar-link ' to='/contactus'>Contact Us</NavLink>
             </li>
             <li>
-              <NavLink className='navbar-btn' to='/bookonline'>Book Online</NavLink>
+              <NavLink className='navbar-btn ' to='/bookonline'>Book Online</NavLink>
             </li>
           </ul>
         </div>

@@ -18,7 +18,7 @@ const Services = () => {
             const Icon =icons[idx]
             return (
                 <div className='service-card'>
-                    <Icon/>
+                    <Icon className='service-icon'/>
                     <br />
                     <p>{data.title}</p>
                 </div>

@@ -25,7 +25,7 @@ gap: 30px;
     margin:  10px 0;
 }
 .room-card img:hover{
-    transform: scale(1.02);
+    box-shadow: 3px 3px 3px 3px #606060;
 
 }
 @media (max-width:426px){

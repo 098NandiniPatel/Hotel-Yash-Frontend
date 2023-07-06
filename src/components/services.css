@@ -13,14 +13,22 @@
 }
 .service-card{
     margin: 15px;
-    padding: 20px;
+    padding: 15px;
     border: 1px dashed var(--text1);
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
 }
+.service-card:hover{
+    color: var(--yellow);
+   transform: scale(.9);
+    border: 1px solid var(--yellow);
+}
+.service-icon{
+    font-size: 24px;
 
+}
 
 @media (max-width:768px) {
     .services{

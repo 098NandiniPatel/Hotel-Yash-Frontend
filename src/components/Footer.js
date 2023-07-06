@@ -5,13 +5,15 @@ import twitter from '../img/twitter.png'
 import instagram from '../img/instagram.png'
 import map from '../img/map.png'
 import mobile from '../img/mobile.png'
+import email from '../img/email.png'
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-icons">
         <span>Hotel Yash</span>
         <div className="address">
-          Hotel Yash, Station Rd, Jakhi Bigha, Dehri, Bihar 821307
+          <p>Hotel Yash, Station Rd, Jakhi Bigha, Dehri, Bihar 821307</p>
+          <p>Contact number:+917903570716</p>
         </div>
 
         <div className="socialmedia">
@@ -19,6 +21,8 @@ const Footer = () => {
           <a href="https://www.facebook.com"><img src={facebook} alt="Facebook" /></a>
           <a href="https://www.twitter.com"><img src={twitter} alt="Twitter" /></a>
           <a href="https://www.instagram.com"><img src={instagram} alt="Instagram" /></a>
+          <a href="https://www.gmail.com"><img src={email} alt="Email" /></a>
+
         </div>
 
         <div className="links">

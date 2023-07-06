@@ -1,13 +1,15 @@
 .searchform{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    /* display: flex; */
     padding: 30px;
     column-gap: 20px;
 }
 
 .searchform .field{
-    padding: 6px 12px;
+    padding: 6px 12px;  
     height: 45px;
+    /* width: 300px; */
     line-height: 32px;
     background: #fff;
     border: 1px solid #dedede;
@@ -31,8 +33,10 @@
 }
 @media (max-width:768px) {
     .searchform{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        /* display: grid;
+        grid-template-columns: repeat(1,1fr); */
+        display: flex;
+        flex-direction: column;
     }
     
 }

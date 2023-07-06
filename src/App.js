@@ -13,6 +13,8 @@ import Scroll from './components/Scroll';
 import HappyRoom from './Pages/HappyRoom';
 import SuperHappyRoom from './Pages/SuperHappyRoom';
 import ScrollToTop from 'react-scroll-to-top';
+// import top from './img/icons8-double-up-50 (1).png'
+import {BsChevronDoubleUp} from 'react-icons/bs'
 
 
 function App() {
@@ -36,7 +38,7 @@ function App() {
      {/* <Scroll/> */}
      
       <Footer />
-      <ScrollToTop smooth top={300} color='#deb666'/>
+      <ScrollToTop smooth top={300} component={<BsChevronDoubleUp/>} style={{backgroundColor:'#deb666' ,color:'#fff', fontSize:'18px'}} />
     </BrowserRouter>
   );
 }

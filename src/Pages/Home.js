@@ -13,27 +13,14 @@ import Rooms from '../components/HomeRooms';
 import { NavLink } from 'react-router-dom'
 
 const Home = () => {
-  const slides = [
-    {
-      image: 'https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_640.jpg',
-      heading: 'Modern & spacious rooms',
-    },
-    {
-      image: 'https://t3.ftcdn.net/jpg/04/50/44/86/240_F_450448652_rqrQSemauB5yVBAvgJ0KOcolxPoJXX8O.jpg',
-      heading: 'luxury experience',
-    },
-    {
-      image: 'https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_640.jpg',
-      heading: 'Book your room now',
-    },
-  ];
 
   return (
     <>
-      <HeroSlider slides={slides}/>
-      <section style={{ backgroundColor: "#f9f9f9" }}>
+      {/* <HeroSlider /> */}
+
+      <section className="first-section" style={{ backgroundColor: "#f9f9f9" }}>
         <div style={{ backgroundColor: "#fff" }}>
-          <DateForm/>
+          <DateForm />
         </div>
 
       </section>
@@ -63,36 +50,36 @@ const Home = () => {
         <div style={{ border: '2px solid #858a99' }}>
           <div style={{ padding: '30px ', textAlign: 'center' }}>
             <h2 style={{ fontWeight: '200', paddingBottom: '5px', color: '#deb666' }} >Want to check our photos ?</h2>
-            <NavLink to="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos 
-            <span><FaArrowRightLong /></span>
-            {/* <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span> */}
+            <NavLink to="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos
+              <span><FaArrowRightLong /></span>
+              {/* <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span> */}
             </h1></NavLink>
           </div>
         </div>
       </section>
       <section>
-      {/* css part in services.css */}
-      <h1 className='service-heading'>Our FAVORITE ROOMS</h1>
-      <p className='service-subhead'>Check out now our best rooms</p>
-        <Rooms/>
+        {/* css part in services.css */}
+        <h1 className='service-heading'>Our FAVORITE ROOMS</h1>
+        <p className='service-subhead'>Check out now our best rooms</p>
+        <Rooms />
       </section>
       <section>
-      {/* css part in services.css */}
-      <h1 className='service-heading'>OUR AWESOME SERVICES</h1>
-      <p className='service-subhead'>Check out our awesome services</p>
+        {/* css part in services.css */}
+        <h1 className='service-heading'>OUR AWESOME SERVICES</h1>
+        <p className='service-subhead'>Check out our awesome services</p>
         <Services />
       </section>
       <section>
-      {/* css part in services.css */}
-      <h1 className='service-heading'>Our Gallery</h1>
-      <p className='service-subhead'></p>
-        <GallerySection/>
+        {/* css part in services.css */}
+        <h1 className='service-heading'>Our Gallery</h1>
+        <p className='service-subhead'></p>
+        <GallerySection />
       </section>
       <section>
-      {/* css part in services.css */}
-      <h1 className='service-heading'>Our Guests love us</h1>
-      <p className='service-subhead'>What our guests are saying about us</p>
-        <Testimonials/>
+        {/* css part in services.css */}
+        <h1 className='service-heading'>Our Guests love us</h1>
+        <p className='service-subhead'>What our guests are saying about us</p>
+        <Testimonials />
       </section>
 
     </>

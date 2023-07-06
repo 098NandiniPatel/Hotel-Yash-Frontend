@@ -12,13 +12,14 @@ const DateForm = () => {
   const [formData,setFormdata]=useState({});
   const [adult, setAdult] = useState(1)
   const [children, setChildren] = useState(0)
- 
+  const [rooms, setRooms] = useState(1)
   const handleCheckAvail=(e)=>{
     e.preventDefault(); 
     setFormdata({
       ...dates,
       adultNo:adult,
-      childNo:children
+      childNo:children,
+      roomCount:rooms
     })
     //after submit redirect logic goes here
 
@@ -59,7 +60,22 @@ const DateForm = () => {
       </div>
     </Menu>
   );
-  const total = adult + children
+  const menu1 = (
+    <Menu style={{ padding: '15px', color: '#858a99' }}>
+      <div style={{ display: 'flex', paddingBottom: '20px', justifyContent: 'space-between' }}>
+        <div>
+          <h4>Rooms</h4>
+        </div>
+        <div className='inc-dec-btn'>
+          <button onClick={e => setRooms(rooms - 1)}>-</button>
+          <span>{rooms}</span>
+          <button onClick={e => setRooms(rooms + 1)}>+</button>
+        </div>
+
+      </div>
+    </Menu>
+  );
+  const total = adult + children;
   return (
     <form id='checkavail-form' onSubmit={handleCheckAvail}>
     <div className='searchform' >
@@ -70,6 +86,13 @@ const DateForm = () => {
         <Dropdown overlay={menu} trigger={['click']}>
           <div>
             Guests {total}
+          </div>
+        </Dropdown>
+      </div>
+      <div className='field'>
+        <Dropdown overlay={menu1} trigger={['click']}>
+          <div>
+            Rooms {rooms}
           </div>
         </Dropdown>
       </div>

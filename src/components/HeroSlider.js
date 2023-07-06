@@ -1,7 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './slider.css';
+  
+  
 
-const HeroSlider = ({ slides }) => {
+const HeroSlider = () => {
+
+  const slides = [
+    {
+      image: 'https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_640.jpg',
+      heading: 'Modern & spacious rooms',
+    },
+    {
+      image: 'https://t3.ftcdn.net/jpg/04/50/44/86/240_F_450448652_rqrQSemauB5yVBAvgJ0KOcolxPoJXX8O.jpg',
+      heading: 'luxury experience',
+    },
+    {
+      image: 'https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_640.jpg',
+      heading: 'Book your room now',
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
   useEffect(() => {
