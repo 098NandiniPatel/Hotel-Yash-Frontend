@@ -18,12 +18,12 @@ body {
   color: var(--text1);
   background: var(--bg1);
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 #root {
-  /* height: 100%;
-  width: 100%; */
-  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden; */
 }
 section{
   padding: 3rem 10rem;

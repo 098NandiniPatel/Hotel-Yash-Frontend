@@ -2,12 +2,11 @@ import React from 'react'
 import { roomList } from '../helpers/roomList'
 import TopSection from '../components/RoomPage/TopSection'
 import { NavLink } from 'react-router-dom'
-import Services from '../components/Services'
-import DateForm from '../components/DateForm'
+import Services from '../components/home/Services'
+import DateForm from '../components/home/DateForm'
 import { aboutImg } from '../helpers/aboutImg'
 import Carousel from 'react-material-ui-carousel'
 import { Stack } from '@mui/material'
-import RoomSlider from '../components/RoomPage/RoomSlider'
 const HappyRoom = () => {
   return (
     <>
@@ -18,7 +17,6 @@ const HappyRoom = () => {
           spacing={{ xs: 1, sm: 2, md: 4 }}
         >
         <div className='room-left'>
-          {/* <RoomSlider/> */}
           <Carousel>
               {
                 aboutImg.map((item) => <img src={item.img} height={'400px'} />)

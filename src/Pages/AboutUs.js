@@ -1,7 +1,7 @@
 import React from 'react'
-import BreadCrumbs from '../components/BreadCrumbs'
-import Services from '../components/Services'
-import About from '../components/About'
+import BreadCrumbs from '../components/about/BreadCrumbs'
+import Services from '../components/home/Services'
+import About from '../components/about/About'
 
 const AboutUs = () => {
   return (

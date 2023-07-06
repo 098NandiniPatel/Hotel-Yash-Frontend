@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import './contact.css'
 
-import BreadCrumbs from '../components/BreadCrumbs'
+import BreadCrumbs from '../components/about/BreadCrumbs'
 
 const ContactUs = () => {
   const {
@@ -55,6 +55,7 @@ const ContactUs = () => {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7505191.250260705!2d72.14717736929796!3d23.292375867405138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398da934d2d9da5b%3A0x6119226bcfec4bad!2sHOTEL%20YASH!5e0!3m2!1sen!2sin!4v1688574970960!5m2!1sen!2sin"
          width={"100%"} height={"350"} 
          allowfullscreen="" 
+         title='contact'
          loading="lazy" 
          referrerpolicy="no-referrer-when-downgrade">
 

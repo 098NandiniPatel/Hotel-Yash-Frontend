@@ -1,11 +1,11 @@
 import React from 'react'
 import './footer.css'
-import facebook from '../img/facebook.png'
-import twitter from '../img/twitter.png'
-import instagram from '../img/instagram.png'
-import map from '../img/map.png'
-import mobile from '../img/mobile.png'
-import email from '../img/email.png'
+import facebook from '../../img/facebook.png'
+import twitter from '../../img/twitter.png'
+import instagram from '../../img/instagram.png'
+import map from '../../img/map.png'
+import mobile from '../../img/mobile.png'
+import email from '../../img/email.png'
 const Footer = () => {
   return (
     <footer className="footer">

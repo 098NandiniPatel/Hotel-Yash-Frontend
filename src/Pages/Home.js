@@ -1,24 +1,23 @@
 import React from 'react'
-import HeroSlider from '../components/HeroSlider';
-import DateForm from '../components/DateForm';
+import HeroSlider from '../components/home/HeroSlider';
+import DateForm from '../components/home/DateForm';
+import './home.css'
 import { Stack } from "@mui/material";
 import Carousel from 'react-material-ui-carousel'
 import { aboutImg } from '../helpers/aboutImg';
-import Services from '../components/Services';
-// import Gallery from '../Pages/Gallery'
-import { FaArrowRightLong } from "react-icons/fa6"
-import Testimonials from '../components/Testimonials';
-import GallerySection from '../components/GallerySection';
-import Rooms from '../components/HomeRooms';
+import Services from '../components/home/Services';
+import Testimonials from '../components/home/Testimonials';
+import GallerySection from '../components/home/GallerySection';
+import Rooms from '../components/home/HomeRooms';
 import { NavLink } from 'react-router-dom'
 
 const Home = () => {
 
   return (
     <>
-      {/* <HeroSlider /> */}
+      <HeroSlider />
 
-      <section className="first-section" style={{ backgroundColor: "#f9f9f9" }}>
+      <section className="settingDiv">
         <div style={{ backgroundColor: "#fff" }}>
           <DateForm />
         </div>
@@ -30,7 +29,7 @@ const Home = () => {
           spacing={{ xs: 1, sm: 2, md: 4 }}
         >
           <div className="left">
-            <h1>HOTEL EMOJI INN</h1>
+            <h1>HOTEL YASH</h1>
             <h3>SPREADING SMILES</h3>
             <p>Experience the Burst of Emotions with the first theme based hotel in NAINITAL. Serving you a feast of vibrant grids of emojies all around. <br />
               WE WELCOME YOU <span>❤</span><br />
@@ -40,7 +39,7 @@ const Home = () => {
           <div className="right">
             <Carousel>
               {
-                aboutImg.map((item) => <img src={item.img} />)
+                aboutImg.map((item) => <img src={item.img} alt='img' />)
               }
             </Carousel>
           </div>
@@ -51,7 +50,7 @@ const Home = () => {
           <div style={{ padding: '30px ', textAlign: 'center' }}>
             <h2 style={{ fontWeight: '200', paddingBottom: '5px', color: '#deb666' }} >Want to check our photos ?</h2>
             <NavLink to="/gallery" style={{ textDecoration: 'none' }}><h1>Experience our hotel through photos and videos
-              <span><FaArrowRightLong /></span>
+              {/* <span><FaArrowRightLong /></span> */}
               {/* <span style={{fontWeight:"bolder",fontSize:'40px'}}> →</span> */}
             </h1></NavLink>
           </div>

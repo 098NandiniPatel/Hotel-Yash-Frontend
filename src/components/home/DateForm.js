@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { DatePicker } from 'antd';
-// import moment from 'moment';
 import { Menu, Dropdown} from 'antd';
 import './dataform.css'
 
@@ -22,8 +21,8 @@ const DateForm = () => {
       roomCount:rooms
     })
     //after submit redirect logic goes here
-
-
+    //form data formate
+    // {0: '13-07-2023', 1: '14-07-2023', adultNo: 1, childNo: 0, roomCount: 1}
   }
   console.log(formData)
   const onChange=(values)=> {

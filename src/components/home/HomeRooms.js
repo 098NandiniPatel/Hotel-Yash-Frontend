@@ -1,5 +1,5 @@
 import React from 'react'
-import { roomList } from '../helpers/roomList'
+import { roomList } from '../../helpers/roomList'
 import { NavLink } from "react-router-dom";
 import './homeRooms.css'
 const HomeRooms = () => {

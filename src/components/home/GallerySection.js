@@ -1,6 +1,6 @@
 import './GallerySection.css'
 import { useState } from 'react'
-import { galleryImages } from '../helpers/galleryImages'
+import { galleryImages } from '../../helpers/galleryImages'
 
 import {
   AiOutlineCloseCircle,

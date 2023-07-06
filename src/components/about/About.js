@@ -8,7 +8,7 @@ const About = () => {
             spacing={{ xs: 1, sm: 2, md: 4 }}
         >
             <div className="left">
-                <h1>HOTEL EMOJI INN</h1>
+                <h1>HOTEL YASH</h1>
                 <h3>SPREADING SMILES</h3>
                 <p>Experience the Burst of Emotions with the first theme based hotel in NAINITAL. Serving you a feast of vibrant grids of emojies all around. <br />
                     WE WELCOME YOU <span>❤</span><br />

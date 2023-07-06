@@ -4,7 +4,7 @@ import "./Header.css";
 import { NavLink } from 'react-router-dom'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
-import logo from '../img/logo.png'
+import logo from '../../img/logo.png'
 // import Hamburger from "./Hamburger";
 
 export default function Header() {

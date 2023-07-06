@@ -1,0 +1,10 @@
+.settingDiv{
+    margin-top: 610px;
+    background-color: #f9f9f9;
+}
+@media (max-width:1024px){
+    .settingDiv{
+        margin-top: 490px;
+        
+    }
+}

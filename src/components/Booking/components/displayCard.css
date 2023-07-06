@@ -1,0 +1,198 @@
+.displayCard {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+
+    border: 1px solid #d5d6da;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.displayCard .left {
+    width: max-content;
+}
+
+.displayCard .left img {
+    width: auto;
+    height: 100%;
+}
+
+.displayCard .mid {
+    width: 100%;
+    padding: 20px;
+}
+
+.displayCard .mid h2 {
+    font-size: 20px;
+    font-weight: 500;
+    /* color: #858a99; */
+    color: #60636b;
+    /* padding: 5px;
+    padding-left: 7px; */
+    margin-bottom: 10px;
+}
+
+.displayCard .mid h3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #858a99;
+    /* padding: 5px;
+    padding-left: 7px; */
+    margin-bottom: 20px;
+}
+
+.displayCard .mid .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.displayCard .mid .icons .icon {
+    position: relative;
+    display: inline;
+    padding: 3px 7px 0;
+    border: 1px dashed #d0d2d6;
+    border-radius: 2px;
+
+}
+
+.displayCard .mid .icons .icon:hover {
+    background-color: #e5e6ea;
+    color: #60636b;
+}
+
+.displayCard .mid .icons .icon .msgBox {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.displayCard .mid .icons .icon:hover .msgBox {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.displayCard .mid .icons .icon .msgBox p {
+    color: #858a99;
+    background-color: #e3e5ed;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.displayCard .mid .icons .icon .msgBox div {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #e3e5ed;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.displayCard .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px 5px;
+    border-left: 1px solid #e3e5ed;
+}
+
+.displayCard .right h2 {
+    font-size: 20px;
+    font-weight: 500;
+    /* color: #858a99; */
+    color: #60636b;
+    padding: 5px;
+    padding-left: 7px;
+}
+
+.displayCard .right h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #858a99;
+    padding: 2px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+}
+
+.displayCard .right .bookInactive {
+    background-color: #e7e7e7;
+    color: #60636b;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.displayCard .right .bookActive{
+    background-color:  #deb666;
+    color: #e7e7e7;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+.displayCard .right select {
+    margin-top: auto;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 300;
+    color: #858a99;
+    border: none;
+}
+
+@media screen and (max-width:600px) {
+    .displayCard {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .displayCard .left img {
+        width: 100%;
+        height: 360px;
+    }
+
+    .displayCard .right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .displayCard .right select {
+        /* margin-top: 20px; */
+        margin: 20px 0;
+    }
+
+    .displayCard .right .bookInactive {
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .displayCard .right .bookActive{
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
