@@ -15,7 +15,7 @@ const HeroSlider = () => {
       heading: 'luxury experience',
     },
     {
-      image: 'https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_640.jpg',
+      image: 'https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_1280.jpg',
       heading: 'Book your room now',
     },
   ];

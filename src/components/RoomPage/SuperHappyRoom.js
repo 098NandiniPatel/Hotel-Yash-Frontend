@@ -1,14 +1,17 @@
 import React from 'react'
-import TopSection from '../components/RoomPage/TopSection'
-import { roomList } from '../helpers/roomList'
-import DateForm from '../components/home/DateForm'
-import Services from '../components/home/Services'
+import TopSection from './TopSection'
+import { roomList } from '../../helpers/roomList'
+
+import DateForm from '../home/DateForm'
+import Services from '../home/Services'
 import './superHappyRoom.css'
 import { NavLink } from 'react-router-dom'
-import { aboutImg } from '../helpers/aboutImg'
+import { aboutImg } from '../../helpers/aboutImg'
+
 import Carousel from 'react-material-ui-carousel'
 import { Stack } from '@mui/material'
-import Testimonials from '../components/home/Testimonials'
+import Testimonials from '../home/Testimonials'
+
 const SuperHappyRoom = () => {
   return (
     <>
@@ -40,7 +43,7 @@ const SuperHappyRoom = () => {
       <section>
         <h2 style={{ color: '#606060' }}>Room Services</h2>
         <Services />
-        <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>What our guest says?</h2>
+        <h2 style={{ color: '#606060', padding: '25px 0' }}>What our guest says?</h2>
         <Testimonials/>
         <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>Similar Room</h2>
         <div className='similar-room-card'>

@@ -1,13 +1,13 @@
 import React from 'react'
-import { roomList } from '../helpers/roomList'
-import TopSection from '../components/RoomPage/TopSection'
+import { roomList } from '../../helpers/roomList'
+import TopSection from './TopSection'
 import { NavLink } from 'react-router-dom'
-import Services from '../components/home/Services'
-import DateForm from '../components/home/DateForm'
-import { aboutImg } from '../helpers/aboutImg'
+import Services from '../home/Services'
+import DateForm from '../home/DateForm'
+import { aboutImg } from '../../helpers/aboutImg'
 import Carousel from 'react-material-ui-carousel'
 import { Stack } from '@mui/material'
-import Testimonials from '../components/home/Testimonials'
+import Testimonials from '../home/Testimonials'
 const HappyRoom = () => {
   return (
     <>
@@ -41,7 +41,7 @@ const HappyRoom = () => {
       <section>
         <h2 style={{ color: '#606060' }}>Room Services</h2>
         <Services />
-        <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>What our guest says?</h2>
+        <h2 style={{ color: '#606060', padding: '25px 0' }}>What our guest says?</h2>
         <Testimonials/>
         <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>Similar Room</h2>
         <div className='similar-room-card'>

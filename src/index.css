@@ -34,6 +34,9 @@ body {
   width: 100%;
   /* overflow-x: hidden; */
 }
+/* NavLink{
+text-decoration: none;
+} */
 section{
   padding: 3rem 10rem;
 }

@@ -9,8 +9,8 @@ import Gallery from "./Pages/Gallery";
 import ContactUs from "./Pages/ContactUs";
 import BookOnline from "./components/Booking/BookOnline";
 import "./index.css";
-import HappyRoom from './Pages/HappyRoom';
-import SuperHappyRoom from './Pages/SuperHappyRoom';
+import HappyRoom from './components/RoomPage/HappyRoom';
+import SuperHappyRoom from './components/RoomPage/SuperHappyRoom';
 import ScrollToTop from 'react-scroll-to-top';
 import {BsChevronDoubleUp} from 'react-icons/bs'
 
