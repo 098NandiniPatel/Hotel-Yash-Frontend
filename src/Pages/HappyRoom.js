@@ -7,6 +7,7 @@ import DateForm from '../components/home/DateForm'
 import { aboutImg } from '../helpers/aboutImg'
 import Carousel from 'react-material-ui-carousel'
 import { Stack } from '@mui/material'
+import Testimonials from '../components/home/Testimonials'
 const HappyRoom = () => {
   return (
     <>
@@ -40,6 +41,8 @@ const HappyRoom = () => {
       <section>
         <h2 style={{ color: '#606060' }}>Room Services</h2>
         <Services />
+        <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>What our guest says?</h2>
+        <Testimonials/>
         <h2 style={{ color: '#606060', padding: '25px 0 15px' }}>Similar Room</h2>
         <div className='similar-room-card'>
           <NavLink to={roomList[1].link} style={{ textDecoration: 'none' }}>
