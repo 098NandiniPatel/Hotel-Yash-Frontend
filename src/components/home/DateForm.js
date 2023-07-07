@@ -39,9 +39,9 @@ const DateForm = () => {
           <p>Ages 18+</p>
         </div>
         <div className='inc-dec-btn'>
-          <button onClick={e => setAdult(adult - 1)}>-</button>
+          <button onClick={e => {if(adult>1){ setAdult(adult - 1)}}}>-</button>
           <span>{adult}</span>
-          <button onClick={e => setAdult(adult + 1)}>+</button>
+          <button onClick={e => {if(adult<10){ setAdult(adult + 1)}}}>+</button>
         </div>
 
       </div>
@@ -51,9 +51,9 @@ const DateForm = () => {
           <p>Ages 4 to 18</p>
         </div>
         <div className='inc-dec-btn'>
-          <button onClick={e => setChildren(children - 1)}>-</button>
+          <button onClick={e => {if(children>0){ setChildren(children - 1)}}}>-</button>
           <span>{children}</span>
-          <button onClick={e => setChildren(children + 1)}>+</button>
+          <button onClick={e => {if(children<10){ setChildren(children + 1)}}}>+</button>
         </div>
 
       </div>
@@ -66,9 +66,9 @@ const DateForm = () => {
           <h4>Rooms</h4>
         </div>
         <div className='inc-dec-btn'>
-          <button onClick={e => setRooms(rooms - 1)}>-</button>
+          <button onClick={e => {if(rooms>1){ setRooms(rooms - 1)}}}>-</button>
           <span>{rooms}</span>
-          <button onClick={e => setRooms(rooms + 1)}>+</button>
+          <button onClick={e => {if(rooms<10){ setRooms(rooms + 1)}}}>+</button>
         </div>
 
       </div>

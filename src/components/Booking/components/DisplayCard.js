@@ -8,12 +8,12 @@ import { AiOutlineWifi } from "react-icons/ai"
 import { LuPhoneCall } from "react-icons/lu";
 import { MdBathtub } from "react-icons/md";
 import { BiMaleFemale } from "react-icons/bi"; 
-
+import {MdOutlineKeyboardArrowDown} from "react-icons/md"
 
 import "./displayCard.css";
 
 
-const DisplayCard = ({img, name, desc, price, formData}) => {
+const DisplayCard = ({img, name, desc, price,link, formData}) => {
     console.log(formData);
     return (
         <div className="displayCard">
@@ -68,11 +68,9 @@ const DisplayCard = ({img, name, desc, price, formData}) => {
             
             <div className='right'>
                 <h2>₹{price}</h2>
-                <h3>PER NIGHT</h3>
-                { false ? <button className='bookInactive'>Select Booking Dates</button> : <NavLink to="/bookingForm"><button className='bookActive'>Book Now</button></NavLink> }
-                <select>
-                    <option value='avail'>Availability & Details</option>
-                </select>
+                <h3>per night</h3>
+                { false ? <button className='bookInactive'>Select Booking Dates</button> : <NavLink to="/bookingForm"><button className='btn'>Book Now</button></NavLink> }
+                    <NavLink to={link} style={{ textDecoration: 'none' ,color:'#606060',marginTop:'10px'}}><p>Availability and Details <MdOutlineKeyboardArrowDown/></p></NavLink>
             </div>
         </div>
     );

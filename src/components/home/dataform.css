@@ -38,5 +38,8 @@
         display: flex;
         flex-direction: column;
     }
+    /* .date-field{
+        max-width: 100vw;
+    } */
     
 }

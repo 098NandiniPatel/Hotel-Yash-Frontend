@@ -1,12 +1,10 @@
 import React from 'react'
 import DateForm from '../home/DateForm';
 import DisplayCard from './components/DisplayCard';
-
+import BreadCrumbs from '../about/BreadCrumbs'
+import {roomList} from '../../helpers/roomList'
 
 import "./bookOnline.css"
-
-import room1 from "../../img/room1.jpeg";
-import room2 from "../../img/room2.jpeg";
 
 const BookOnline = () => {
 
@@ -19,14 +17,19 @@ const BookOnline = () => {
 
   return (
     <>
-    
-    <section id='bookOnline' className='first-section'>
+    <BreadCrumbs name="Book Online" /> 
+    <section id='bookOnline'>
     {/* process component */}
-    <DateForm />
+    
+    <div style={{ backgroundColor: "#fff" }}>
+          <DateForm />
+        </div>
+    </section>
+    <section>
       <div className="mainContainer">
         <main>
             <div className='bar'>
-              <h4>You found 2 rooms from ₹3,200.00</h4>
+              <h4>You found 2 rooms</h4>
               <select>
               <option value="lowest">Sort by: Lowest price</option>
               <option value="highest">Sort by: Highest price</option>
@@ -35,18 +38,20 @@ const BookOnline = () => {
             </div>
             
             <DisplayCard
-              img={room1}
-              name="AC Rooms"
-              desc="AC on, stress off"
-              price={1600.00}
+              img={roomList[0].img}
+              name={roomList[0].name}
+              desc="The best things in life are free"
+              price={roomList[0].price}
+              link={roomList[0].link}
               formData={dummyData}
             />
 
             <DisplayCard
-              img={room2}
-              name="Non-AC Rooms"
-              desc="The best things in life are free"
-              price={2500.00}
+              img={roomList[1].img}
+              name={roomList[1].name}
+              desc="AC on, stress off"
+              price={roomList[1].price}
+              link={roomList[1].link}
               formData={dummyData}
             />
         </main>
