@@ -1,0 +1,38 @@
+.room-container{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+.room-card{  
+
+    width: 50%; 
+    text-align: center;
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+.room-card p{
+    color: var(--heading);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 2px 5px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.room-card h3{
+    color: var(--heading);
+    font-weight: 500;
+    margin:  10px 0;
+}
+.room-card img:hover{
+    transform: scale(1.02);
+
+}
+@media (max-width:426px){
+    .room-container{
+        flex-direction: column;
+        }
+        .room-card{  
+            width: 100%; 
+        }
+}

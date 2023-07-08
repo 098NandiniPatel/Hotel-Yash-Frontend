@@ -1,6 +1,6 @@
 import React from 'react'
-import BreadCrumbs from '../components/about/BreadCrumbs'
-import GallerySection from '../components/home/GallerySection'
+import BreadCrumbs from '../components/BreadCrumbs'
+import GallerySection from '../components/GallerySection'
 
 const Gallery = () => {
 
