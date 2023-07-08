@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 
 import "./bookingForm.css";
+import Test from './Test';
 
 const BookingForm = () => {
     const dummyData = {
@@ -128,7 +129,8 @@ const BookingForm = () => {
         </main>
       </div>
     </section>
-
+    
+<Test/>
     </>
   )
 }

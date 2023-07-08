@@ -1,29 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState,createContext } from 'react'
 import { DatePicker } from 'antd';
 import { Menu, Dropdown} from 'antd';
 import './dataform.css'
 
 const { RangePicker } = DatePicker;
+export const Context=createContext();
+
+
 
 const DateForm = () => {
 
   const [dates, setDates] = useState([]);
-  const [formData,setFormdata]=useState({});
+  const [formData,setFormdata]=useState([]);
   const [adult, setAdult] = useState(1)
   const [children, setChildren] = useState(0)
   const [rooms, setRooms] = useState(1)
   const handleCheckAvail=(e)=>{
     e.preventDefault(); 
-    setFormdata({
+    setFormdata([
       ...dates,
-      adultNo:adult,
-      childNo:children,
-      roomCount:rooms
-    })
+      adult,
+      children,
+      rooms
+    ])
     //after submit redirect logic goes here
     //form data formate
     // {0: '13-07-2023', 1: '14-07-2023', adultNo: 1, childNo: 0, roomCount: 1}
   }
+  
   console.log(formData)
   const onChange=(values)=> {
     setDates(values.map(item=>{
@@ -76,10 +80,13 @@ const DateForm = () => {
   );
   const total = adult + children;
   return (
+    <>
+     <Context.Provider value={formData}>
     <form id='checkavail-form' onSubmit={handleCheckAvail}>
     <div className='searchform' >
       <div className='field'>
-        <RangePicker onChange={onChange} className='date-field' format={"DD-MM-YY"}/>
+        <RangePicker onChange={onChange} className='date-field' format={"DD-MM-YY"} 
+        style={{color: "orange",outline:'none'}}/>
       </div>
       <div className='field'>
         <Dropdown overlay={menu} trigger={['click']}>
@@ -101,6 +108,10 @@ const DateForm = () => {
 
     </div>
     </form>
+    {/* <h1>form display</h1>
+    <p>{formData}</p> */}
+    </Context.Provider>
+    </>
   )
 }
 
