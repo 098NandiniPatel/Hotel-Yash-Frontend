@@ -1,0 +1,90 @@
+.mainContainer {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 90px 160px;
+    background-image: url(../../../assets/leavesPattern.webp);
+
+}
+
+.mainContainer .top_section .heading h3 {
+    font-size: 22px;
+}
+
+.mainContainer .top_section .display_text {
+    width: auto;
+    height: 40px;
+    background-color: #deb666;
+    color: white;
+    margin: 20px;
+    padding: 10px 400px;
+    align-items: center;
+}
+
+
+.mainContainer .top_section .proceed {
+    width: auto;
+    height: 60px;
+    background-color: #deb666;
+    color: white;
+    margin-top: 20px;
+    /* margin-bottom: 40px; */
+    margin-left: auto;
+    padding: 10px 40px;
+    align-items: center;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.mainContainer .top_section .display_details {
+    font-size: 14px;
+    font-weight: 200;
+    margin: 40px;
+}
+
+.mainContainer .top_section .display_details h1 {
+    font-size: 22px;
+}
+
+.mainContainer .top_section .display_details table {
+    width: 40%;
+    margin: 20px auto;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+
+.mainContainer .top_section .display_details table tr td {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px;
+    color: #515151;
+}
+
+.mainContainer .top_section .display_details table tr td:nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 2px;
+    color: #515151;
+}
+
+
+/* .mainContainer .top_section .display_details h3 {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    color: #515151;
+}
+
+
+.mainContainer .top_section .display_details h3 span {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.mainContainer .top_section .total {
+    padding: 20px;
+    align-items: center;
+} */

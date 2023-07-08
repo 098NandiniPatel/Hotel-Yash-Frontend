@@ -19,7 +19,7 @@ const initialState = {
 	roomPrice: null,
 	roomImg: "",
 	totalPrice: null,
-	nights: null,
+	nights: 1,
 };
 
 export const bookingReducer = createReducer(initialState, {
