@@ -1,12 +1,12 @@
-
-#bookOnline{
-    
-    background-color: #f9f9f9;
+#bookOnline {
+    margin: 20px;
+    /* background-image: url(../../assets/leavesPattern.webp); */
 }
- .mainContainer {
-    /* margin-top: 80px;
+
+#bookOnline .mainContainer {
+    margin-top: 80px;
     height: auto;
-    width: auto; */
+    width: auto;
     /* background-color: black; */
     /* border: 2px solid #808080; */
     border-radius: 10px;
@@ -16,15 +16,15 @@
     /* padding: 10px; */
 }
 
-.mainContainer aside {
+#bookOnline .mainContainer aside {
     /* padding: 10px; */
     /* border: 2px solid #808080; */
     /* width: 300px; */
-    /* background-color: #f2eeee; */
-    /* border-radius: 5px; */
+    background-color: #f2eeee;
+    border-radius: 5px;
 }
 
- .mainContainer main {
+#bookOnline .mainContainer main {
     padding: 50px 10px 50px;
     /* border: 2px solid #808080; */
     width: 100%;
@@ -33,20 +33,20 @@
     /* justify-content: space-around; */
 }
 
-.mainContainer main .bar {
+#bookOnline .mainContainer main .bar {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.mainContainer main .bar h4{
+#bookOnline .mainContainer main .bar h4{
     font-weight: 300;
     font-size: 15px;
     align-items: start;
 }
 
-.mainContainer main .bar select {
+#bookOnline .mainContainer main .bar select {
     background-color: #e7e7e7;
     color: #60636b;
     border-radius: 3px;
@@ -56,21 +56,24 @@
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: 300;
-    /* align-items: end; */
+    align-items: end;
 }
 
 /* media query */
 @media screen and (max-width: 600px) {
-   
+    #bookOnline {
+        margin: 0px;
+    }
     
 
-    .mainContainer {
+    #bookOnline .mainContainer {
         width: 100%;
         /* justify-content: center; */
         margin: 50px 0 0 0;
     }
 
-     .mainContainer main {
+    
+#bookOnline .mainContainer main {
     padding: 0;
     /* border: 2px solid #808080; */
     width: 100%;

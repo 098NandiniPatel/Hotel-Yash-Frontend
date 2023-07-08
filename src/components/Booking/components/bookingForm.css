@@ -1,5 +1,7 @@
 #bookingForm{
     margin: 0px auto;
+    /* background-image: url(../../../assets/leavesPattern.webp); */
+
 }
 
 #bookingForm .mainContainer {
@@ -7,13 +9,9 @@
     padding: 10px;
 }
 
-/* #bookingForm .mainContainer .top_section {
-    background-color: blueviolet;
-} */
-
-/* #bookingForm .mainContainer .top_section .heading h1{
+#bookingForm .mainContainer .top_section .heading h1{
     font-size: 22px;
-} */
+}
 
 #bookingForm .mainContainer .top_section .display_text {
     width: auto;
@@ -44,7 +42,8 @@
 
   .group {
     position: relative;
-    margin: 40px 80px;
+    margin: 40px 20px;
+    background-color: white;
    }
    
    .input {
@@ -168,6 +167,7 @@
     font-size: 14px;
     font-weight: 200;
     margin: 40px;
+    text-align: center;
 }
 
 #bookingForm .mainContainer .top_section .display_details h3 {
@@ -175,6 +175,7 @@
     font-weight: 300;
     padding: 10px;
     color: #515151;
+    width: max-content;
 }
 
 #bookingForm .mainContainer .top_section .display_details h3 span {
@@ -197,18 +198,23 @@
 #bookingForm .mainContainer .booking_details {
     /* border: 1px solid black; */
     padding: 5px;
+    text-align: center;
+    background-color: white;
+
 }
 
 #bookingForm .mainContainer .booking_details h1 {
     font-size: 22px;
+    text-align: left;
 }
 
 #bookingForm .mainContainer .booking_details table {
     /* border: 1px solid black; */
-    width: 50%;
+    width: 70%;
     margin: 20px auto;
-    text-align: left;
-    border-spacing: 10px;
+    /* border-spacing: 10px; */
+    text-align: center;
+
 }
 
 #bookingForm .mainContainer .booking_details table tr td {
@@ -216,6 +222,22 @@
     font-weight: 400;
     padding: 2px;
     color: #515151;
+    padding: 0;
+}
+
+#bookingForm .mainContainer .booking_details table tr:nth-child(2) td {
+    width: 150px;
+}
+
+#bookingForm .mainContainer .booking_details table tr td .roomImg {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+
+}
+
+#bookingForm .mainContainer .booking_details table tr:nth-child(1) td {
+    width: 50%;
 }
 
 #bookingForm .mainContainer .booking_details table tr td:nth-child(2) {
@@ -223,7 +245,7 @@
     font-weight: 500;
     color: #9b6907;
     text-align: center;
-    width: 50%;
+    width: 30%;
 }
 
 
@@ -236,20 +258,28 @@
     font-weight: 400;
 }
 
-#bookingForm .mainContainer .booking_details .proceed {
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.proceed {
     width: auto;
     height: 60px;
     background-color: #deb666;
     color: white;
     margin-top: 20px;
     /* margin-bottom: 40px; */
-    margin-left: 340px;
+    margin: 20px auto 0;
     padding: 10px 40px;
     align-items: center;
     outline: none;
     font-size: 18px;
     font-weight: 600;
     border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width:600px){

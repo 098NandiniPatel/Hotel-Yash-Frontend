@@ -10,6 +10,7 @@
     height: 200px;
     margin-bottom: 30px;
     overflow: hidden;
+    background-color: white;
 }
 
 .displayCard .left {
@@ -141,14 +142,15 @@
 
 .displayCard .right .bookActive{
     background-color:  #deb666;
-    color: #e7e7e7;
+    color: #ffffff;
     border-radius: 3px;
     border: 1px solid #e7e7e7;
     padding: 5px;
     margin: 5px;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 
