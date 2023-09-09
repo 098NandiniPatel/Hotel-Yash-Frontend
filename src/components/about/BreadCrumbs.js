@@ -9,6 +9,7 @@ const BreadCrumbs = (props) => {
     <Breadcrumbs aria-label="breadcrumb">
         <NavLink to='/' style={{ textDecoration: 'none',color:"#606060" }}>Home</NavLink>
         <Typography>{props.name}</Typography>
+
       </Breadcrumbs>
     </section>
   )
