@@ -31,7 +31,7 @@ const ContactUs = () => {
 
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    // alert(JSON.stringify(data));
     // Destrcture data object
     // const { name,phone, email, subject, message ,checkbox} = data;
     try {
